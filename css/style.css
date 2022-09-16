@@ -180,8 +180,6 @@ body {
 }
 .goods-list {
 	overflow: hidden;	
-	display: flex;
-	justify-content: center;
 }
 
 .goods-list li {
@@ -196,3 +194,171 @@ body {
 .goods-list li:hover {
 	border: 1px solid var(--primary-color);	
 }
+
+/*=================== .user-post ==================*/
+.user-post {
+	padding: 0 0 0 1rem;
+	box-sizing: border-box;    /* 상자-크기(결정방법) : 테두리 포함 */
+}
+.post-author {
+	margin: 2rem 0 0 0;
+}
+.post-date {
+	margin: 1rem 0;
+}
+.post-body {
+	padding: 1rem 0
+}
+.post-details {
+	font-size: .8rem;
+	color: var(--primary-color);
+}
+.material-symbols-outlined {
+	vertical-align: middle;   /* table, inline 요소 에서만 사용 */		
+}
+.post-author .material-symbols-outlined,
+.post-date .material-symbols-outlined {
+	background: var(--primary-color);
+	padding: .3rem;
+	border-radius: 1rem;
+}
+
+
+/*============== events ================ */
+.item {
+	height: 177px;
+	overflow: hidden;   /* float 문제를 해결하려는 속성x, 부가적인 효과로 float 문제를 해결 */
+}
+
+.item .item-first {
+	float: left;
+}
+.item .item-last {
+	float: right;
+}
+
+.pager {
+	text-align: center;
+}
+
+.pager a {
+	border: 1px solid var(--primary-color);
+	display: inline-block; /* inline : 텍스트 --> 크기x 글꼴-크기 o */
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	overflow: hidden;
+	font-size: 0;
+}
+.pager a:nth-child(1) {
+	background-color: var(--primary-color);
+}
+.pager a:nth-child(2) {
+	margin: 0 .5rem;
+}
+
+/* =============== footer ============== */
+footer {
+	margin: 2rem 0;
+}
+footer .container {
+	position: relative;
+}
+.guide-links li {
+	display: inline-block;
+	font-size: .825rem;
+}
+.guide-links li:nth-child(2) {
+	margin: 0 .5rem
+}
+.logo-bottom {
+	position: absolute;
+	right: 0;
+	top: 1rem;
+}
+
+
+/* =========== about style ======== */
+.article-links {
+	overflow: hidden;
+	margin: 0 0 2rem 0
+}
+.article-links li{
+	float: left;
+	width: calc(100% / 3);
+	border: 1px solid var(--primary-color);
+	text-align: center;
+	padding: .5rem 0;
+	box-sizing: border-box;
+	
+}
+.article-links li.selected {
+	background-color: var(--primary-color);
+	color: var(--text-color)
+}
+.article-links li a {
+	color: inherit;
+}
+
+/*   시놉시스 */
+#synopsis {
+	overflow: hidden
+}
+#synopsis .poster { /* > : 자손 선택자 , (공백) : 후손 선택자 */
+	float: left;
+	width: 50%;
+}
+#synopsis .intro { /* > : 자손 선택자 , (공백) : 후손 선택자 */
+	float: right;
+	width: 50%;
+}
+.intro-header {
+	margin: 2rem 0 0 0
+}
+.intro-body {
+	margin: 1rem 0;
+}
+
+.chars td, .trailer td {
+	padding: .5rem;
+	text-align: center;
+	font-size: .875rem;
+	overflow: hidden;
+}
+.chars td:hover img, .trailer td:hover img { /* td에 마우스 over 하면 */   
+	transform: scale(1.2)     /* 변형 : 크기(1.2배) */	
+}
+.chars td img, .trailer td img {
+	object-fit: cover; /* new */
+	width: 100%;
+	transition: all .3s   /* 변형(중간단계를 생성) : 모든 css속성을 0.3초 속도로 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

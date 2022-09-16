@@ -4,13 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>미니언즈2</title>
-		
+		<link href="images/favicon.png" rel="shortcut icon">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- 깃으로 관리되는 index.html -->
 	</head>
 	<body>
 		<h1 class="d-none">Minions: The Rise of Gru</h1>
@@ -22,7 +21,7 @@
 					<li><a href="#">사이트맵</a></li>
 				</ul>
 				<div class="logo">
-					<a href="#">
+					<a href="index.html">
 						<img src="images/logo.png" alt="미니언즈2">
 					</a>
 				</div>
@@ -55,92 +54,140 @@
 			<h2 class="d-none">미니언즈2 시놉시스, 등장인물, 예고편</h2>
 			<article>
 				<div class="container mt-200">
-					<h3>about</h3>
+					<h3>synopsis</h3>
 					<p>미니언즈2 개요</p>
-					<ul class="char-list">
-						<li>
+					<ul class="article-links">
+						<li class="selected">
 							<a href="#synopsis">시놉시스</a>
 						</li>
 						<li>
 							<a href="#characters">등장인물</a>
 						</li>
 						<li>
-							<a href="#synopsis">시놉시스</a>
+							<a href="#trailers">예고편</a>
 						</li>
 					</ul>
-				</div>
-				<!-- /.container -->
-			</article>
-			<article>
-				<div class="container mt-100">
-					<h3>reviews</h3>
-					<p>미니언즈2 관람후기</p>
-				</div>
-				<!-- /.container -->
-				<div class="container-fluid">
-				<div class="prev">
-					<span class="material-symbols-outlined">
-						chevron_left
-					</span>
-				</div>
-					<div class="carousel">
-						<div class="attach-img">
-							<img src="images/attach.png" alt="첨부이미지">
+					<div id="synopsis">
+						<div class="poster">
+							<img src="images/poster-img.png" alt="시놉시스 : 미니언즈2 포스터">
 						</div>
-						<div class="user-post">
-							<p class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vero molestiae odit molestias nihil aspernatur atque sapiente in magni et iste perferendis mollitia numquam autem ducimus nam sequi omnis sint.</p>
-							<p class="post-date">2022/09/14</p>
-							<p class="post-author">by yeonghun22</p>
+						<div class="intro">
+							<p class="intro-header">오랜마니언!
+							</p>
+							<p class="intro-body">세계 최고의 슈퍼 악당을 꿈꾸는 미니보스 ‘그루’와 그를 따라다니는 미니언들.
+어느 날 그루는 최고의 악당 조직 ‘6’의 마법 스톤을 훔치는데 성공하지만
+뉴페이스 미니언 ‘오토’의 실수로 스톤을 잃어버리고 빌런6에게 납치까지 당한다.
+미니보스를 구하기 위해 잃어버린 스톤을 되찾아야 하는 ‘오토’, 그리고 쿵푸를 마스터해야 하는 ‘케빈’, ‘스튜어트’, ‘밥’!
+							</p>
+							<p class="intro-footer">올여름 극장가를 점령할 MCU(미니언즈 시네마틱 유니버스)가 돌아온다!</p>
 						</div>
 					</div>
-				<div class="next">
-					<span class="material-symbols-outlined">
-						chevron_right
-					</span>			
 				</div>
+				<!-- /.container -->
+			</article>			
+			<article>
+				<div class="container mt-200">
+					<h3>Characters</h3>
+					<p>등장인물</p>
+					<ul class="article-links">
+						<li>
+							<a href="#synopsis">시놉시스</a>
+						</li>
+						<li class="selected">
+							<a href="#characters">등장인물</a>
+						</li>
+						<li>
+							<a href="#trailers">예고편</a>
+						</li>
+					</ul>
+					<div id="characters">
+						<!-- 2행 4열 테이블 -->
+						<table class="chars">
+							<tr>
+								<td>
+									<img src="images/character01.png" alt="배역1">
+									<p>악당 | 톰 크루즈</p>
+								</td>
+								<td><img src="images/character02.png" alt="배역2">
+									<p>악당 | 톰 크루즈</p></td>
+								<td><img src="images/character03.png" alt="배역3">
+									<p>악당 | 톰 크루즈</p></td>
+								<td><img src="images/character04.png" alt="배역4">
+									<p>악당 | 톰 크루즈</p></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/character05.png" alt="배역5">
+									<p>악당 | 톰 크루즈</p>
+								</td>
+								<td><img src="images/character06.png" alt="배역6">
+									<p>악당 | 톰 크루즈</p></td>
+								<td><img src="images/character07.png" alt="배역7">
+									<p>악당 | 톰 크루즈</p></td>
+								<td><img src="images/character08.png" alt="배역8">
+									<p>악당 | 톰 크루즈</p></td>
+							</tr>							
+						</table>
+					</div>
 				</div>
+				<!-- /.container -->
 			</article>
 			<article>
 				<div class="container mt-200">
-					<h3>goods</h3>
-					<p>미니언즈2 굿즈</p>
-					<ul >
-						<li class="goods-list">
-							<img src="images/goods1.png" alt="키링">
-							<p class="item-title">키링 1+1</p>
-							<p class="item-price">3,000원</p>
-							<div class="btns">
-								<button type="button">담기</button>
-								<button type="button">구매</button>
-							</div>
+					<h3>trailers</h3>
+					<p>등장인물</p>
+					<ul class="article-links">
+						<li>
+							<a href="#synopsis">시놉시스</a>
 						</li>
 						<li>
-							<img src="images/goods2.png" alt="백팩">
-							<p class="item-title">백팩</p>
-							<p class="item-price">30,000원</p>
-							<div class="btns">
-								<button type="button">담기</button>
-								<button type="button">구매</button>
-							</div>
+							<a href="#characters">등장인물</a>
 						</li>
-						<li>
-							<img src="images/goods3.png" alt="캠핑체어">
-							<p class="item-title">캠핑체어</p>
-							<p class="item-price">30,000원</p>
-							<div class="btns">
-								<button type="button">담기</button>
-								<button type="button">구매</button>
-							</div>
+						<li class="selected">
+							<a href="#trailers">예고편</a>
 						</li>
 					</ul>
+					<div id="trailers">
+						<!-- 2행 4열 테이블 -->
+						<table class="trailer">
+							<tr>
+								<td><img src="images/trailer-poster01.png" alt="배역1"></td>								</td>
+								<td><img src="images/trailer-poster02.png" alt="배역2"></td>
+								<td><img src="images/trailer-poster03.png" alt="배역3"></td>
+							</tr>
+							<tr>
+								<td><img src="images/trailer-poster04.png" alt="배역1"></td>								</td>
+								<td><img src="images/trailer-poster05.png" alt="배역2"></td>
+								<td><img src="images/trailer-poster06.png" alt="배역3"></td>
+							</tr>														
+						</table>
+					</div>
 				</div>
 				<!-- /.container -->
-			</article>
-			<article>
-				<h3>event</h3>
-				<p>미니언즈2 이벤트</p>
-			</article>
+			</article>			
 		</section>
+		<aside>
+			<div class="container-fluid mt-100" style="background-color: #f9c02d;">
+				<div class="container">
+					<img src="images/banner.jpg" alt="맥도날드 x 미니언즈2 캠페인">
+				</div>
+			</div>
+		</aside>
+		<footer>
+			<div class="container">
+				<ul class="guide-links">
+					<li><a href="#">제휴업체</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+				</ul>
+				<p>&copy; <strong class="owner">minions&trade;</strong>. all rights reserverd.</p>
+				<div class="logo-bottom">
+					<a href="#">
+						<img src="images/footer_logo.png" alt="미니언즈2">
+					</a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
 
