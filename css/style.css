@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import "./reset.css";
+:root {
+	--primary-color: #f9c02d;
+	--secondary-color: #000;
+	--third-color: #666;
+	--fourth-color: #45648B;
+	--text-color: #fff;
+}
+html { font-size: 20px; } /* root element --> rem (알엠, 알이엠?) */
+
+body {
+	font-family: "Noto Sans KR", sans-serif;
+	color: #222;
+	line-height: 1.5;
+	letter-spacing: -1px;	
+}
+
+/* ========== google font icon style =============== */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.header-top {
+	max-width: 1190px;
+	min-height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+.links {
+	float: left;
+	margin: 70px 0 0 0;
+}
+.links li, .icons li {
+	float: left;
+}
+.links li:nth-child(2), .icons li:nth-child(2) {
+	margin: 0 .5rem;   
+}
+.links li a {
+	font-size: .7rem;
+	color: #666666;   /* #666 과 같음. R(66), G(66), B(66) */
+	font-weight: 500
+}
+.links li a:hover {
+	color: #000
+}
+.logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	bottom: -8px;
+}
+.icons {
+	float: right;
+	margin: 70px 0 0 0;
+}
+
+.header-bottom {
+	border-top: 2px solid var(--primary-color);
+	clear: both;	
+}
+#gnb {
+	width: 600px;
+	margin: 0 auto;  /* block 요소일때만 */	
+	overflow: hidden;
+}
+
+#gnb li {
+	float: left;
+	width: 150px;
+	text-align: center;
+	/* padding: .625rem 0; */
+}
+#gnb li a {
+	display: block;
+	padding: .625rem 0;
+	font-size: .9rem; /* 0.9rem x 20px = 18px */
+	color: var(--primary-color);
+	font-weight: 900; /* 100~900, unit 없음 */	
+}
+#gnb li a:hover { /* pseudo-class selector */
+	color: #000000;
+}
+
+/* ============= video ================= */
+.video-wrap {
+	width: 920px;
+	height: 460px;
+	margin: 0 auto;
+	position: relative;
+}
+.characters {
+	position: absolute;
+	top: 140px;
+	left: 50%;
+	margin-left: calc(-378px / 2);
+}
+
+
+/* ============= section ================= */
+.mt-100 {
+	margin-top: 100px !important; /* 너무 많이 사용하지 않는게..*/
+}
+.mt-200 {
+	margin-top: 200px !important
+}
+.container {
+	max-width: 920px;
+	margin: 0 auto
+}
+.container h3, .container h3 + p { /* +, ~ : 형제요소 선택자 */
+	text-align: center
+}
+.container h3 {
+	color: var(--primary-color);
+	text-transform: capitalize;   /* 텍스트-변형: 첫글자 대문자 */
+	font-size: 1.5rem;
+	font-weight: 900
+}
+.container h3 + p {
+	margin: .5rem 0;
+	font-size: .875rem;
+	color: var(--third-color);
+}
+.char-list::after,.carousel::after { /* clearFix */
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;	
+}
+.char-list li {
+	float: left;
+	border: 1px solid var(--primary-color);
+	box-sizing: border-box;
+	width: calc(100% / 3); /* css3 함수: 다른 단위간의 계산결과 반환 */
+	overflow: hidden;
+}
+
+.container-fluid {
+	background-color: var(--fourth-color);
+	position: relative;	
+}
+.prev {
+	position: absolute;
+	left: 10%;
+	top: calc(50% - 20px);
+	color: var(--text-color);
+	border: 1px solid #ccc;
+	padding: 1rem;
+
+}
+.carousel {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+.carousel div {
+	float: left;
+}
+.attach-img {
+	width: 30%;   /* 920px의 30% 해당하는 크기 */
+	margin-right: 2%;
+}
+.user-post {
+	width: calc(100% - 300px);
+	color: var(--text-color);
+}
+.next {
+	position: absolute;
+	right: 10%;
+	top: calc(50% - 20px);
+	color: var(--text-color);
+	border: 1px solid #ccc;
+	padding: 1rem;
+}
+.goods-list {
+	overflow: hidden;	
+	display: flex;
+	justify-content: center;
+}
+
+.goods-list li {
+	float: left;	
+	width: calc(100% / 3); /* css3 함수: 다른 단위간의 계산결과 반환 */
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid transparent;   /* 투명색상의 1px 테두리 */
+	padding: 1rem 0;	
+}
+
+.goods-list li:hover {
+	border: 1px solid var(--primary-color);	
+}
