@@ -7,15 +7,52 @@
 	--fourth-color: #45648B;
 	--text-color: #fff;
 }
-html { font-size: 20px; } /* root element --> rem (알엠, 알이엠?) */
+html { 
+	font-size: 20px;
+	scroll-behavior: smooth	
+} /* root element --> rem (알엠, 알이엠?) */
 
 body {
 	font-family: "Noto Sans KR", sans-serif;
 	color: #222;
 	line-height: 1.5;
 	letter-spacing: -1px;	
+	/* overflow: hidden; */
 }
 
+/* ========== popup style =============== */
+#popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;         /* viewport width : vw */
+	height: 100vh;	      /* viewport height : vh */
+	z-index: 9999;		  /* 포지셔닝 요소의 깊이값 : 1~9999 */
+}
+#popup.bg {
+	background-color: rgba(0,0,0,.3); /* 검정색, 30% 투명도 */
+}
+.content {
+	position: absolute;
+	width: 940px;
+	height: 530px;
+	left: 50%;
+	top: 50%;
+	margin-left: calc(-940px / 2);
+	margin-top: calc(-530px / 2)
+}
+#close {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: black;
+	color: white;
+	border-radius: 50%;
+	right : 25%;
+	top: 20%;
+	font-size: 3rem
+}
 /* ========== google font icon style =============== */
 .material-symbols-outlined {
   font-variation-settings:

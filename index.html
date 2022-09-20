@@ -10,9 +10,33 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="//code.jquery.com/jquery-latest.min.js"></script>
+		<!-- 콘솔 : $ is not defined : jQuery Library 제대로 로딩 안되었다! -->
 	</head>
 	<body>
+		<script>
+			$(function(){
+				setTimeout(showAfterLoad, 3000);// 3초(=3000ms) 뒤 showAfterLoad 함수 호출
+				
+				function showAfterLoad(){  // 자바 메소드처럼 선언!
+					$("#popup").css("display", "block");
+					$("body").css("overflow", "hidden");
+				}
+				
+				$("#close").click(function(){
+					//#popup 을 감춰/사라지게해줘/보이지 않게 해줘!!
+					$("#popup").css("display","none"); // .css() : css 조작메소드
+					$("body").css("overflow", "auto");
+				})
+			})
+		</script>
 		<h1 class="d-none">Minions: The Rise of Gru</h1>
+		<div id="popup" class="bg">
+			<div class="content">
+				<img src="images/big-event-cut.jpg" alt="미니언즈2 이벤트">
+			</div>
+			<button type="button" id="close">&times;</button>
+		</div>
 		<header>
 			<div class="header-top">
 				<ul class="links">
