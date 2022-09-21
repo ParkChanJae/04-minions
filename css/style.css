@@ -43,15 +43,15 @@ body {
 	margin-top: calc(-530px / 2)
 }
 #close {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	background: black;
-	color: white;
-	border-radius: 50%;
-	right : 25%;
-	top: 20%;
-	font-size: 3rem
+	 position: absolute;
+    width: 50px;
+    height: 60px;
+    background: black;
+    color: white;
+    border-radius: 10%;
+    right: 10%;
+    top: 50%;
+    font-size: 3rem;
 }
 /* ========== google font icon style =============== */
 .material-symbols-outlined {
